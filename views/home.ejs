@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landlord Notice Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="main">
+      <div class="container hero">
+        <h1>Generate Legally-Compliant UK Landlord Notices in Minutes</h1>
+        <p>Save time and money by producing official Section 21, Section 8 and other notices without hiring a solicitor.</p>
+        <a href="/select" class="button primary">Get Started</a>
+      </div>
+      <div class="container how-it-works">
+        <h2>How It Works</h2>
+        <ol class="steps">
+          <li>
+            <h3>Choose Notice Type</h3>
+            <p>Select the notice you need, such as Section 21, Section 8, rent increase or tenancy renewal.</p>
+          </li>
+          <li>
+            <h3>Enter Details</h3>
+            <p>Fill in basic information about the landlord, tenant and property using our guided form.</p>
+          </li>
+          <li>
+            <h3>Pay &amp; Download</h3>
+            <p>Pay securely via Stripe and instantly download your formatted PDF notice ready to serve.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="container trust">
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>Based on official gov.uk templates</li>
+          <li>Cheaper than hiring a solicitor</li>
+          <li>Ready in minutes</li>
+        </ul>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
