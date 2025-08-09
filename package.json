@@ -1,0 +1,16 @@
+{
+  "name": "landlord-legal-notice-generator",
+  "version": "1.0.0",
+  "description": "An Express‑based UK landlord legal notice generator that produces official notices based on government templates and supports Stripe payments.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "body-parser": "^1.20.2",
+    "stripe": "^12.0.0",
+    "pdfkit": "^0.13.0"
+  }
+}
