@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing – Landlord Notice Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="main">
+      <div class="container pricing">
+        <h1>Pricing</h1>
+        <p>Choose the plan that fits your needs. Pay once for a single notice or subscribe for unlimited notices.</p>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h2>Single Notice</h2>
+            <p class="price">£15</p>
+            <p>Generate one legally compliant notice whenever you need it.</p>
+            <a href="/select" class="button primary">Generate Notice</a>
+          </div>
+          <div class="pricing-card">
+            <h2>Unlimited Plan</h2>
+            <p class="price">£10&nbsp;/&nbsp;month</p>
+            <p>Unlimited notices every month. Cancel anytime.</p>
+            <a href="/select" class="button primary">Start Now</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
