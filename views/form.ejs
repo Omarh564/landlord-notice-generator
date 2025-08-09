@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= config.name %> – Landlord Notice Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="main">
+      <div class="container">
+        <h1><%= config.name %></h1>
+        <p><%= config.description %></p>
+        <form action="/create-session" method="POST" class="form">
+          <input type="hidden" name="type" value="<%= type %>" />
+          <div class="form-group">
+            <label for="landlordName">Landlord Name</label>
+            <input type="text" id="landlordName" name="landlordName" required />
+          </div>
+          <div class="form-group">
+            <label for="landlordAddress">Landlord Address</label>
+            <textarea id="landlordAddress" name="landlordAddress" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="tenantName">Tenant Name</label>
+            <input type="text" id="tenantName" name="tenantName" required />
+          </div>
+          <div class="form-group">
+            <label for="tenantAddress">Tenant Address</label>
+            <textarea id="tenantAddress" name="tenantAddress" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="propertyAddress">Property Address</label>
+            <textarea id="propertyAddress" name="propertyAddress" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="tenancyStart">Tenancy Start Date</label>
+            <input type="date" id="tenancyStart" name="tenancyStart" required />
+          </div>
+          <div class="form-group">
+            <label for="noticeEnd">Notice End Date</label>
+            <input type="date" id="noticeEnd" name="noticeEnd" required />
+          </div>
+          <% if (type === 'section8') { %>
+          <div class="form-group">
+            <label for="reason">Reason (e.g., rent arrears or breach)</label>
+            <textarea id="reason" name="reason" rows="3" placeholder="Describe the reason for eviction..." required></textarea>
+          </div>
+          <% } %>
+          <button type="submit" class="button primary">Proceed to Payment</button>
+        </form>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
