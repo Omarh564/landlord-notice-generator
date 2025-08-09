@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ – Landlord Notice Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="main">
+      <div class="container faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+          <h3>Is this service legal?</h3>
+          <p>
+            Yes. We use official UK government templates for each notice type.
+            However, we are not a law firm and do not provide legal advice. You
+            should review the documents carefully and consult a solicitor if you
+            have any questions about your specific situation.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How quickly will I get my notice?</h3>
+          <p>
+            Immediately after completing your payment you will be able to
+            download your PDF notice. The process takes just a few minutes from
+            start to finish.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need an account?</h3>
+          <p>
+            No account is required. Simply choose your notice type, enter the
+            necessary details, pay securely via Stripe and download your
+            document.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I edit the notice after downloading?</h3>
+          <p>
+            The PDF notice is generated based on the information you provide.
+            You should review your entries carefully before payment. If you
+            notice a mistake, you can simply start a new notice and only pay
+            when you're ready to download.
+          </p>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
