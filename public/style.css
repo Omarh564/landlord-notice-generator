@@ -1,0 +1,197 @@
+/* Basic styling for Landlord Notice Generator */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header.header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 0;
+}
+header.header .logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header.header nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header.header nav a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+footer.footer {
+  background-color: #f0f0f0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer.footer p {
+  margin: 0.25rem 0;
+}
+footer.footer a {
+  color: #004080;
+  text-decoration: none;
+}
+footer.footer a:hover {
+  text-decoration: underline;
+}
+.footer .disclaimer {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.hero h1 {
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #005bb5;
+}
+.button.primary {
+  background-color: #0070f3;
+}
+
+.how-it-works,
+.trust {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+.steps {
+  counter-reset: item;
+  list-style: none;
+  padding: 0;
+}
+.steps li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.steps li::before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h2 {
+  margin-top: 0;
+}
+.card .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.card .button {
+  margin-top: auto;
+  text-align: center;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-group textarea {
+  resize: vertical;
+}
+.form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.form button:hover {
+  background-color: #005bb5;
+}
