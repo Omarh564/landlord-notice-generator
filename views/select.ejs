@@ -1,1 +1,45 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Notice – Landlord Notice Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main class="main">
+      <div class="container">
+        <h1>Select a Notice Type</h1>
+        <div class="grid">
+          <div class="card">
+            <h2>Section 21 (Form 6A)</h2>
+            <p>End an assured shorthold tenancy legally with an official Section 21 notice (Form 6A).</p>
+            <p class="price">£ 15</p>
+            <a href="/form/section21" class="button">Generate Notice</a>
+          </div>
+          <div class="card">
+            <h2>Section 8</h2>
+            <p>Evict tenants for rent arrears or breaches of tenancy with a Section 8 notice.</p>
+            <p class="price">£ 20</p>
+            <a href="/form/section8" class="button">Generate Notice</a>
+          </div>
+          <div class="card">
+            <h2>Rent Increase</h2>
+            <p>Notify your tenants of a rent increase with an official rent increase letter.</p>
+            <p class="price">£ 10</p>
+            <a href="/form/rentincrease" class="button">Generate Notice</a>
+          </div>
+          <div class="card">
+            <h2>Tenancy Renewal</h2>
+            <p>Offer tenants a renewal of their tenancy agreement with a formal letter.</p>
+            <p class="price">£ 10</p>
+            <a href="/form/renewal" class="button">Generate Notice</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
